@@ -1,233 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
-      rel="stylesheet"
-    />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
 
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#">Andhini's</a>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">Andhini's</a>
+    </div>
+
+    <div class="navbar-item">
+      <a href="#">HOME</a>
+      <a href="#about">ABOUT ME</a>
+      <a href="#skills">SKILL</a>
+      <a href="#project">PROJECT</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+
+    <div class="navbar-icons">
+      <a href="https://github.com/settings/profile"><i data-feather="github" color="white"></i></a>
+      <a href="https://www.instagram.com/aandhinirr?igsh=MWF0dG5laWc1MGwzcg=="><i data-feather="instagram" color="white"></i></a>
+      <a href="https://mail.google.com"><i data-feather="mail" color="white"></i></a>
+    </div>
+  </nav>
+
+  <!-- JUMBOTRON -->
+  <main class="main">
+    <div class="jumbotron">
+      <h1>Andhini's</h1>
+      <h1>Portfolio Website</h1>
+      <p>Frontend Developer</p>
+      <a href="#about" class="get-started">Get Started</a>
+      <a href="asset/email (1).png" download class="download-btn">Download Cv</a>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="asset/Gemini_Generated_Image_ih08fuih08fuih08-removebg-preview.png" alt="" />
       </div>
 
-      <div class="navbar-item">
-        <a href="#">HOME</a>
-        <a href="#about">ABOUT ME</a>
-        <a href="#skills">SKILL</a>
-        <a href="#project">PROJECT</a>
-        <a href="#contact">CONTACT</a>
-      </div>  
-
-      <div class="navbar-icons">
-        <a href="https://github.com/settings/profile"><i data-feather="github" color="white"></i></a>
-        <a href="https://www.instagram.com/aandhinirr?igsh=MWF0dG5laWc1MGwzcg=="><i data-feather="instagram" color="white"></i></a>
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i data-feather="mail" color="white"></i></a>
-      </div>
-    </nav>
-
-    <!-- Jumbotron -->
-    <main class="main">
-      <div class="jumbotron">
-        <h1>Andhini's</h1>
-        <h1>Portfolio Website</h1>
-        <p>Frontend Developer</p>
-        <a href="#about" class="get-started">Get Started</a>
-        <a href="asset/video.png" download="" class="download-btn">Download Cv</a>
-
-      </div>
-    </main>
-
-    <!-- ABOUT ME SECTION -->
-    <section class="about" id="about">
-      <div class="about-container">
-        <div class="about-image">
-          <img
-            src="asset/Gemini_Generated_Image_ih08fuih08fuih08-removebg-preview.png"
-            alt=""
-          />
-        </div>
-
-        <div class="about-text">
-          <h2>About <span>Me</span></h2>
-          <h4>Frontend Developer & UI/UX Designer</h4>
-          <p>
-            Hi! I’m a Front-End Developer and UI/UX Designer who loves combining
-            creativity and technology to build clean, responsive, and
-            user-friendly designs. I enjoy turning ideas into real digital
-            experiences that look great and work smoothly. I’m passionate about
-            design, coding, and continuously learning new things to keep
-            improving my skills and creating better products.
-          </p>
-          <button class="btn">See More</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILL SECTION -->
-    <section class="skills" id="skills">
-      <h2>My <span>Skill</span></h2>
-      <div class="skill-container">
-        <div class="skill-card">
-          <img src="asset/illustrator.png" alt="Adobe Illustrator" />
-          <p class="skill-name">Adobe Illustrator</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="asset/figma.png" alt="Figma" />
-          <p class="skill-name">Figma</p>
-        </div>
-
-        <div class="skill-card">
-          <img
-            src="asset/WhatsApp Image 2025-10-08 at 17.45.33_334db553.png"
-            alt="Visuak Studio Code"
-          />
-          <p class="skill-name">Visual Studio Code</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="asset/html.png" alt="HTML" />
-          <p class="skill-name">HTML</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="asset/text.png" alt="CSS" />
-          <p class="skill-name">CSS</p>
-        </div>
-
-        <div class="skill-card">
-          <img src="asset/typescript.png" alt="Typescript" />
-          <p class="skill-name">Typescript</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="project" id="project">
-  <h2>My <span>Project</span></h2>
-
-  <div class="project-list">
-
-    <!-- PROJECT 1 -->
-    <div class="project-item left">
-      <div class="project-img">
-        <img src="asset/DDG_POSTER-ANTYBULLY-01.jpg" alt="">
-      </div>
-
-      <div class="project-text">
-        <h3> Project 1</h3>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Frontend Developer & UI/UX Designer</h4>
         <p>
-        This project focuses on creating an anti-bullying poster using Adobe Illustrator. 
-        The purpose is to learn vector design while delivering a message about kindness and respect. During the process, we explore how colors, shapes, and text can work together to create a clear and attractive layout. We practice choosing readable fonts, balancing composition, and highlighting key messages so people understand the importance of stopping bullying. This activity teaches us how visual design can influence emotions and encourage positive behavior. Through the project, we gain creative skills and learn to communicate meaningful messages through digital artwork.
+          Hi! I’m a Front-End Developer and UI/UX Designer who loves combining creativity and technology to build clean, responsive, and user-friendly designs. I enjoy turning ideas into real digital experiences that look great and work smoothly. I’m passionate about design, coding, and continuously learning new things to keep improving my skills and creating better products.
         </p>
-        <a href="asset/DDG_POSTER-ANTYBULLY-01.jpg" class="see-project-btn">See Project</a>
+        <button class="btn">See More</button>
       </div>
     </div>
+  </section>
 
-    <!-- PROJECT 2 -->
-    <div class="project-item right">
-      <div class="project-text">
-        <h3>Project 2</h3>
-        <p>
-         This project is about tracing character images using Adobe Illustrator to improve our vector illustration skills. We learn basic tools such as the Pen Tool, Shape Tool, and Direct Selection Tool to recreate outlines and colors accurately. The task trains our precision in adjusting curves, controlling anchor points, and matching details from a reference image. We also practice applying fills, simple shading, and clean line work so the final illustration looks neat and consistent. Even though we follow an existing picture, the goal is to produce our own vector version. This activity builds patience, observation, and confidence in digital drawing.
-        </p>
-        <a href="asset/Latihan-2-01.jpg" class="see-project-btn">See Project</a>
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2>My <span>Skill</span></h2>
+    <div class="skill-container">
+
+      <div class="skill-card">
+        <img src="asset/illustrator.png" alt="" />
+        <p class="skill-name">Adobe Illustrator</p>
       </div>
 
-      <div class="project-img">
-        <img src="asset/Latihan-2-01.jpg" alt="">
-      </div>
-    </div>
-
-    <!-- PROJECT 3 -->
-    <div class="project-item left">
-      <div class="project-img">
-        <img src="asset/LOGO IG-01.jpg" alt="">
+      <div class="skill-card">
+        <img src="asset/figma.png" alt="" />
+        <p class="skill-name">Figma</p>
       </div>
 
-      <div class="project-text">
-        <h3>Project 3</h3>
-        <p>
-          This project focuses on recreating the Instagram logo using Adobe Illustrator. The aim is to learn basic vector design by building shapes, controlling proportions, and applying gradients similar to the original logo. Through this activity, we explore how simple geometric forms can become a professional icon. We practice using the Shape Tool, Align panel, Gradient settings, and Stroke adjustments to achieve a clean result. Recreating a well-known logo teaches us to observe details carefully and understand the importance of consistency in branding. This project helps strengthen our technical skills and prepares us for future logo-making tasks.
-        </p>
-        <a href="asset/LOGO IG-01.jpg" class="see-project-btn">See Project</a>
+      <div class="skill-card">
+        <img src="asset/WhatsApp Image 2025-10-08 at 17.45.33_334db553.png" />
+        <p class="skill-name">Visual Studio Code</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="asset/html.png" alt="" />
+        <p class="skill-name">HTML</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="asset/text.png" alt="" />
+        <p class="skill-name">CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="asset/typescript.png" alt="" />
+        <p class="skill-name">Typescript</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="project" id="project">
+    <h2>My <span>Project</span></h2>
+
+    <div class="project-list">
+
+      <div class="project-item left">
+        <div class="project-img">
+          <img src="asset/DDG_POSTER-ANTYBULLY-01.jpg" alt="" />
+        </div>
+        <div class="project-text">
+          <h3>Project 1</h3>
+          <p>This project focuses on creating an anti-bullying poster using Adobe Illustrator. The purpose is to learn vector design while delivering a message about kindness and respect. During the process, we explore how colors, shapes, and text can work together to create a clear and attractive layout. We practice choosing readable fonts, balancing composition, and highlighting key messages so people understand the importance of stopping bullying. This activity teaches us how visual design can influence emotions and encourage positive behavior. Through the project, we gain creative skills and learn to communicate meaningful messages through digital artwork.</p>
+          <a href="asset/DDG_POSTER-ANTYBULLY-01.jpg" class="see-project-btn">See Project</a>
+        </div>
+      </div>
+
+      <div class="project-item right">
+        <div class="project-text">
+          <h3>Project 2</h3>
+          <p>This project is about tracing character images using Adobe Illustrator to improve our vector illustration skills. We learn basic tools such as the Pen Tool, Shape Tool, and Direct Selection Tool to recreate outlines and colors accurately. The task trains our precision in adjusting curves, controlling anchor points, and matching details from a reference image. We also practice applying fills, simple shading, and clean line work so the final illustration looks neat and consistent. Even though we follow an existing picture, the goal is to produce our own vector version. This activity builds patience, observation, and confidence in digital drawing.</p>
+          <a href="asset/Latihan-2-01.jpg" class="see-project-btn">See Project</a>
+        </div>
+        <div class="project-img">
+          <img src="asset/Latihan-2-01.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="project-item left">
+        <div class="project-img">
+          <img src="asset/LOGO IG-01.jpg" alt="" />
+        </div>
+        <div class="project-text">
+          <h3>Project 3</h3>
+          <p>This project focuses on recreating the Instagram logo using Adobe Illustrator. The aim is to learn basic vector design by building shapes, controlling proportions, and applying gradients similar to the original logo. Through this activity, we explore how simple geometric forms can become a professional icon. We practice using the Shape Tool, Align panel, Gradient settings, and Stroke adjustments to achieve a clean result. Recreating a well-known logo teaches us to observe details carefully and understand the importance of consistency in branding. This project helps strengthen our technical skills and prepares us for future logo-making tasks.</p>
+          <a href="asset/LOGO IG-01.jpg" class="see-project-btn">See Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-title">
+      <h3>HAVE SOME <span>QUESTIONS?</span></h3>
+      <h2>Please contact me if you require further information or clarification.</h2>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-img">
+        <img src="asset/email (1).png" />
+      </div>
+
+      <div class="contact-container">
+        <form id="contact-form" action="https://formspree.io/f/xrbwendk" method="POST">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-   <section class="contact-section" id="contact">
-
-  <div class="contact-title">
-    <h3>HAVE SOME <span>QUESTIONS?</span></h3>
-    <h2>Please contact me if you require further information or clarification.</h2>
-  </div>
-
-  <div class="contact-wrapper">
-
-    <!-- LEFT IMAGE -->
-    <div class="contact-img">
-      <img src="asset/email (1).png" />
-    </div>
-
-    <!-- RIGHT FORM -->
-    <div class="contact-container">
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!--footer Section-->
-
-<footer class="footer">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="footer-content">
-        <h3>Let’s Contact To My Sosial Media</h3>
-        <div class="footer-icons">
+      <h3>Let’s Contact To My Sosial Media</h3>
+
+      <div class="footer-icons">
         <a href="https://github.com/settings/profile"><i data-feather="github" color="white"></i></a>
         <a href="https://www.instagram.com/aandhinirr?igsh=MWF0dG5laWc1MGwzcg=="><i data-feather="instagram" color="white"></i></a>
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i data-feather="mail" color="white"></i></a>
+        <a href="https://mail.google.com"><i data-feather="mail" color="white"></i></a>
       </div>
-    </nav>
-    <p class="copyright">©2025 Made By Andhini</p>
-    </div>  
-</footer>
 
+      <p class="copyright">©2025 Made By Andhini</p>
+    </div>
+  </footer>
 
-    <script>
-      feather.replace();
-    </script>
-  </body>
+  <script>feather.replace();</script>
+
+</body>
 </html>
