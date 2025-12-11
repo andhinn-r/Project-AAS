@@ -1,0 +1,548 @@
+/*RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc2d1;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/*  NAVBAR  */
+.navbar {
+  background-color: #ff9ebb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 30px auto;
+  padding: 1.4rem 7%;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0
+}
+
+/* Logo kiri */
+.logo a {
+  font-family: "Brush Script MT", cursive;
+  font-size: 22px;
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Menu tengah */
+.navbar-item {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex: 1;
+  margin-left: 80px;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.navbar-item a:hover {
+  color: deeppink;
+  transform: scale(1.1);
+}
+
+
+/* JUMBOTRON  */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  text-align: center;
+  flex-direction: column;
+  padding: 400px;
+}
+
+.jumbotron h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.jumbotron a {
+  display: block;          /* supaya tombol turun ke bawah */
+  margin: 10px auto;       /* bikin posisi tetap di tengah */
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  background: linear-gradient(90deg, #ff70a6, #ff9ed5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.get-started, .download-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Tombol Get Started — gradient soft */
+.get-started {
+  background: linear-gradient(135deg, #ff9ecb, #ff70a6);
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 112, 166, 0.4);
+}
+
+.get-started:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(255, 112, 166, 0.6);
+}
+
+/* Tombol Download CV — outline stylish */
+.download-btn {
+  border: 2px solid #ff70a6;
+  color: #ff70a6;
+  background: transparent;
+}
+
+.download-btn:hover {
+  background: #ff70a6;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 112, 166, 0.4);
+  transform: translateY(-3px);
+}
+
+/*  ABOUT ME SECTION  */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+margin-bottom: 70px;
+}
+
+.about-container {
+  background-color: #ffd9da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 80px;
+  border-radius: 50px;
+  max-width: 80%;
+  height: 500px;
+}
+
+.about-image {
+  width: 300px;        /* ukuran lingkaran */
+  height: 390px;
+  border-radius: 80%;
+  border: 6px solid #f19ea7;   /* BORDER PINK */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/* GLOW PINK */
+  box-shadow: 
+  0 0 30px rgba(255, 105, 180, 0.6),
+  0 0 10px rgba(248, 144, 196, 0.658);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 70%;
+  object-fit: cover;
+}
+
+
+.about-text {
+  max-width: 600px;
+  color: #6d3333;
+}
+
+.about-text h2 {
+  color: #B84871;
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 5px; 
+
+}
+
+.about-text h2 span {
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4C0027;
+}
+
+.about-text h4 {
+  color: #B84871;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #4C0027;
+  font-family: 'alata', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #e97b93;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(228, 126, 148, 0.568);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff9bb3;
+  transform: translateY(-3px);
+}
+
+.skills {
+  text-align: center;
+  padding: 90px;
+  
+}
+
+.skills h2 {
+  font-size: 40px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.skills h2 span {
+  font-size: 40px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #b2ff9e;
+}
+
+
+/* Grid Container */
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+/* Skill Card */
+.skill-card {
+  background-color: #c5ebc0;
+  width: 270px;
+  height: 270px;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 25px rgba(249, 121, 185, 0.514);
+}
+
+.skill-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  background-color: #ffb5da;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 25px;
+  border-radius: 25px;
+}
+
+/* ===== PROJECT SECTION ===== */
+.project {
+  padding:190px 0;
+  background: #ffc2d1;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: -8%;
+}
+
+.project h2 {
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 45px;
+  margin-bottom: 100px;
+
+}
+
+.project h2 span {
+  color: #4A90A4;
+}
+
+.project-list {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap:90px; /* sebelumnya 150px */
+}
+
+/* ITEM WRAPPER */
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* sebelumnya 50px */
+}
+
+/* IMAGES */
+.project-img img {
+  width: 340px;
+  
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* TEXT SECTION */
+.project-text {
+  font-family: "Momo Trust Display", sans-serif;
+  width: 68%;
+  text-align: left;
+  margin-top: -20px;
+}
+
+.project-text h3 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #4A90A4;;
+}
+
+.project-text p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* SEE PROJECT BUTTON */
+.see-project-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  font-size: 18px;
+ font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  color: white;
+  background-color: #0087A8;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 103, 128, 0.4);
+
+transition: all 0.25s ease;}
+
+.see-project-btn:hover {
+ background-color: #2DA8C8;
+  box-shadow: 0 4px 14px rgba(45, 168, 200, 0.5);
+  transform: scale(1.1);
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 400px;
+}
+
+/* TITLE AREA */
+.contact-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-title h3 {
+   font-family: "Momo Trust Display", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.contact-title h3 span {
+  color: #d55d92;
+}
+.contact-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  display: inline-block; /* BIAR TULISAN RAPI TENGAH */
+  max-width: 100%; /* BIAR ADA BATAS, OPTIONAL */
+  margin-bottom: 50px;
+}
+
+
+
+/* ===== WRAPPER (IMAGE + FORM) ===== */
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  max-width: 1300px;
+  gap: 50px;
+}
+
+/* LEFT IMAGE */
+.contact-img img {
+  width: 320px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 70px
+}
+
+/* RIGHT FORM CONTAINER */
+.contact-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#contact-form {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* INPUTS */
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  background: #d55d92;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: white;
+  font-weight: 600;
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 100%;      /* jadi panjang penuh */
+  padding: 15px 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: .3s ease;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ffb6d9, #e47b9e, #d1618f);/
+}
+
+.submit-btn:hover {
+   background: linear-gradient(90deg, #ff8fc2, #d65485, #b83e6c); /* pink soft → dark */
+  transform: scale(1.03);    /* sedikit membesar */
+}
+
+
+/*===== FOOTER =====*/
+
+/* Background dua warna seperti gambar */
+.footer {
+  padding-top: 80px;
+    background: #ff9ebb;
+    text-align: center;
+    padding:  20px;
+    color: white;
+ font-family: "Poppins", sans-serif;
+}
+
+/* Teks utama */
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  margin-left: 770px;
+}
+
+/* Copyright */
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
